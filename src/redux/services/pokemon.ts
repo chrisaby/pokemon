@@ -8,7 +8,7 @@ export const pokemonApi = createApi({
     getPokemonList: builder.query<any, any>({
       query: ({ limit }) => `pokemon?limit=${limit}`,
     }),
-    getPokemonByName: builder.query<Pokemon, string>({
+    getPokemonByName: builder.query<any, string>({
       query: (name) => `pokemon/${name}`,
     }),
   }),
